@@ -1,0 +1,17 @@
+@model PegawaiMVC.Models.Pegawai
+
+<h2>Hapus Pegawai</h2>
+
+<div>
+    <h4>Apakah anda yakin ingin menghapus pegawai ini ?</h4>
+    <div>
+        <strong>@Model.Nama</strong> - @Model.Jabatan
+    </div>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id"/>
+    <button type="submit">Hapus</button>|
+    <a asp-action="Index">Batal</a>
+</form>
+

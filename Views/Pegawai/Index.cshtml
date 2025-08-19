@@ -1,0 +1,40 @@
+@model IEnumerable<PegawaiMVC.Models.Pegawai>
+
+<h2>Daftar Pegawai</h2>
+
+<p>
+    <a asp-action="Create">Tambah Pegawai</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Jabatan</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal lahir</th>
+            <th>Tanggal Masuk</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nama</td>
+            <td>@item.Alamat</td>
+            <td>@item.Jabatan</td>
+            <td>@item.JenisKelamin</td>
+            <td>@item.TanggalLahir?.ToString("dd/MM/yyyy")</td>
+            <td>@item.TanggalMasukKerja?.ToString("dd//MM/yyyy")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detail</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Hapus</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

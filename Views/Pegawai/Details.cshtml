@@ -1,0 +1,14 @@
+@model PegawaiMVC.Models.Pegawai
+
+<h2>Detail Pegawai</h2>
+
+<div>
+    <p><strong>Nama:</strong> @Model.Nama</p>
+    <p><strong>Alamat:</strong> @Model.Alamat</p>
+    <p><strong>Jabatan:</strong> @Model.Jabatan</p>
+    <p><strong>Jenis Kelamin:</strong> @Model.JenisKelamin</p>
+    <p><strong>Tanggal Lahir:</strong> @Model.TanggalLahir?.ToString("dd/MM/yyyy")</p>
+    <p><strong>Tanggal Masuk Kerja:</strong> @Model.TanggalMasukKerja?.ToString("dd//MM/yyyy")</p>
+</div>
+
+<a asp-action="Index">Kembali</a>
