@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PegawaiMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6763de57609d21b833d58605b3537ca727828d97")]
 [assembly: System.Reflection.AssemblyProductAttribute("PegawaiMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PegawaiMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

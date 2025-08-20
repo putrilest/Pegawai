@@ -11,6 +11,7 @@ namespace PegawaiMVC.Models
         public string Nama {get; set;}
         public string Alamat {get; set;}
         public string Jabatan {get; set;}
+        public decimal Gaji {get; set;}
 
         [Display(Name="Jenis Kelamin")]
         public string JenisKelamin {get; set;}

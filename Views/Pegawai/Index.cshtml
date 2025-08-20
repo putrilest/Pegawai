@@ -10,9 +10,10 @@
     <thead>
         <tr>
             <th>Nama</th>
+            <th>Jenis Kelamin</th>
             <th>Alamat</th>
             <th>Jabatan</th>
-            <th>Jenis Kelamin</th>
+            <th>Gaji</th>
             <th>Tanggal lahir</th>
             <th>Tanggal Masuk</th>
             <th>Aksi</th>
@@ -24,9 +25,10 @@
     {
         <tr>
             <td>@item.Nama</td>
+            <td>@item.JenisKelamin</td>
             <td>@item.Alamat</td>
             <td>@item.Jabatan</td>
-            <td>@item.JenisKelamin</td>
+            <td>@item.Gaji.ToString("N0")</td>
             <td>@item.TanggalLahir?.ToString("dd/MM/yyyy")</td>
             <td>@item.TanggalMasukKerja?.ToString("dd//MM/yyyy")</td>
             <td>
